@@ -1,0 +1,23 @@
+// Legacy: remaining here for part of README and because I can't let go off it..
+// export fn efi_main(handle: uefi.Handle, system: *uefi.tables.SystemTable) callconv(.C) uefi.Status {
+//     uefi.handle = handle;
+//     uefi.system_table = system;
+
+//     log.puts(W("Welcome from UEFI!"));
+//     if(status.isError()) {
+//         return status.latestStatus;
+//     }
+
+//     if(system.con_in) |con_in| {
+//         status.latestStatus = con_in.reset(false);
+//         if(status.isError()) {
+//             return status.latestStatus;
+//         }
+//         var key: uefi.protocol.SimpleTextInput.Key.Input = undefined;
+//         while (con_in.readKeyStroke(&key) == uefi.Status.NotReady) {}
+//     }
+
+    
+
+//     return uefi.Status.Success;
+// }
